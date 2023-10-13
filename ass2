@@ -1,0 +1,33 @@
+#write a program to prepare shopping mall bill
+print('****welcome****')
+a=input('enter your name')
+b=int(input('enter your number'))
+fdq=200
+mvq=400
+gmq=100
+jwlq=650
+ctq=330
+food=int(input('enter no of food items:'))
+movie=int(input('enter no of movies items:'))
+games=int(input('enter no of games items:'))
+jwrl=int(input('enter no of jwrl items:'))
+cloths=int(input('enter no of cloths items:'))
+tot=(fdq*food)+(mvq*movie)+(gmq*games)+(jwlq*jwrl)+(ctq*cloths)
+if tot>2000:
+    disc=tot*33/100
+elif tot>1000:
+    disc=tot*28/100
+elif tot>900:
+    disc=tot*12/100
+elif tot>800:
+    disc=tot*10/100
+else:
+    disc=tot*3/100
+bill=tot-disc
+gst=bill*12/100
+obill=gst+tot
+print('bill:',bill)
+print('gst:',gst)
+print('overall bill to be paid:',obill)
+print('discount',disc)
+print('****thank you visit again****')
